@@ -13,7 +13,7 @@
 class GzParser : public std::iterator<std::input_iterator_tag, std::string>
 {
 public:
-    GzParser(const std::string &filename);
+    explicit GzParser(const std::string &filename);
     GzParser();
 
     GzParser(const GzParser&)=default;

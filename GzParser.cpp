@@ -13,7 +13,7 @@ class GzParser::Impl
 {
 public:
     Impl();
-    Impl(const std::string &filename);
+    explicit Impl(const std::string &filename);
     Impl(const Impl&)=delete;
     Impl& operator = (const Impl&)=delete;
 
